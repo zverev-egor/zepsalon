@@ -1,0 +1,10 @@
+== README
+
+Для запуска приложения <tt>bundle; bundle exec rake db:create db:migrate db:seed</tt>
+
+Администратор:
+
+Имя пользователя: ваше имя пользователя в системе
+Пароль: имя пользователя дважды
+
+Для импорта 10 фильмов с kinopoisk.ru выполните <tt>bundle exec rake kinopoisk:import</tt>

@@ -1,0 +1,22 @@
+-#%h1 Listing infos
+-#
+-#%table
+-#  %tr
+-#    %th Description
+-#    %th
+-#    %th
+-#    %th
+-#
+-#  - @infos.each do |info|
+-#    %tr
+-#      %td= info.description
+-#      %td= link_to 'Show', info
+-#      %td= link_to 'Edit', edit_info_path(info)
+-#      %td= link_to 'Destroy', info, :method => :delete, :data => { :confirm => 'Are you sure?' }
+-#
+-#%br
+-#
+-#= link_to 'New Info', new_info_path
+%h1 Я ТЕБЯ ЛЮБЛЮ
+- @infos.each do |info|
+  %p= markdown(info.description)

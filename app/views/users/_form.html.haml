@@ -1,0 +1,23 @@
+
+= form_for @user do |f|
+  =error_messages_for @user
+  .form-group
+    =f.label :name
+    =f.text_field :name, class: 'form-control'
+  .form-group
+    =f.label :email
+    =f.text_field :email, class: 'form-control'
+  .form-group
+    =f.label :password
+    =f.password_field :password, class: 'form-control'
+  .form-group
+    =f.label :password_confirmation
+    =f.password_field :password_confirmation, class: 'form-control'
+  -if User.edit?(@current_user)
+    .row
+      .col-sm-3
+        .form-group
+          =f.label :role
+          =f.select :role, selectify(User::ROLES),{},class: 'form-control'
+  .form-actions
+    = f.submit nil, class: 'btn btn-primary'

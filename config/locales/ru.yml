@@ -1,0 +1,68 @@
+ru:
+  app:
+    country: Страна
+    film: Фильм
+    name: Нажми сюда
+    person: Персона
+    user: Пользователь
+    genre: Жанр
+    banner: Баннер
+
+  activerecord:
+    models:
+      user: Пользователь
+    attributes:
+      country:
+        name: Название
+      film:
+        name: Название
+        origin_name: Название (в оригинале)
+        slogan: Девиз
+        country: Страна
+        country_id: Страна
+        genre: Жанр
+        genre_id: Жанр
+        director: Режиссер
+        director_id: Режиссер
+        people: Актеры
+        length: Продолжительность
+        year: Год выхода в прокат
+        trailer_url: Трейлер
+        cover: Постер
+        description: Описание
+      genre:
+        name: Жанр
+      person:
+        name: Имя
+        origin_name: Имя в оригинале
+        male: Пол
+        birthday: Дата рождения
+        avatar: Фото
+      user:
+        name: Имя
+        email: Адрес электронной почты
+        password: Пароль
+        password_confirmation: Пароль (повторно)
+        role: Роль
+      banner:
+        show_count: Количество показов
+        count_views: Количество просмотров
+        link: Ссылка
+        description: Описание
+        film_id: Фильм
+        film: Фильм
+        banner_cover: Баннер
+        banner_cover_file_size: Баннер
+  helpers:
+    sure: Вы уверены?
+    submit:
+      create: Сохранить
+      submit: Сохранить
+      update: Сохранить
+  views:
+    pagination:
+      first: ⇤
+      last: ⇥
+      previous: ←
+      next: →
+      truncate: …
