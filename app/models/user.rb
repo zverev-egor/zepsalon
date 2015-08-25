@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  has_and_belongs_to_many :banners
   ROLES=["Пользователь", "Администратор"]
 
   has_secure_password

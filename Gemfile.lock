@@ -111,6 +111,10 @@ GEM
     ntlm-http (0.1.1)
     pg (0.15.1)
     polyglot (0.3.5)
+    posix-spawn (0.3.11)
+    pygments.rb (0.6.3)
+      posix-spawn (~> 0.3.6)
+      yajl-ruby (~> 1.2.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -192,6 +196,7 @@ GEM
       unf_ext
     unf_ext (0.0.6)
     webrobots (0.1.1)
+    yajl-ruby (1.2.1)
 
 PLATFORMS
   ruby
@@ -210,6 +215,7 @@ DEPENDENCIES
   mechanize
   paperclip!
   pg (= 0.15.1)
+  pygments.rb
   rails (= 4.1.0)
   rails-i18n
   rails_12factor (= 0.0.2)

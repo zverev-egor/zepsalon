@@ -15,8 +15,17 @@
 -#      %td= link_to 'Destroy', info, :method => :delete, :data => { :confirm => 'Are you sure?' }
 -#
 -#%br
--#
+
 -#= link_to 'New Info', new_info_path
-%h1 Я ТЕБЯ ЛЮБЛЮ
+%h1 Информация
 - @infos.each do |info|
-  %p= markdown(info.description)
+  %p= info.description.html_safe
+
+  -if @current_user.try(:admin?)
+    -#-unless @info.try(:description?)
+    = link_to 'Редактировать', edit_info_path(info), class: 'btn btn-primary'
+    = link_to 'Удалить', info, class: 'btn btn-primary', :method => :delete, :data => { :confirm => 'Вы уверены?' }
+-if @infos.count('id')==0
+  %p= markdown('> В настоящий момент нет не какой информации')
+  -if @current_user.try(:admin?)
+    = link_to 'Создать', new_info_path, class: 'btn btn-primary'

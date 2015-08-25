@@ -49,7 +49,7 @@ gem 'mechanize'
 # Маркдаун
 gem "redcarpet"
 gem 'markitup-rails'
-
+gem 'pygments.rb'
 
 group :doc do
   gem 'sdoc', '0.3.20', require: false
