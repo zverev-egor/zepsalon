@@ -39,10 +39,14 @@ ru:
         birthday: Дата рождения
         avatar: Фото
       user:
-        name: Имя
+        login: Логин
+        last_name: Фамилия
+        first_name: Имя
+        second_name: Отчество
         email: Адрес электронной почты
         password: Пароль
         password_confirmation: Пароль (повторно)
+        avatar: Ава
         role: Роль
       banner:
         show_count: Количество показов

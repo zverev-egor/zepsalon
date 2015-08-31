@@ -46,11 +46,12 @@ gem 'bcrypt', '~> 3.1.7'
 # gem 'debugger', group: [:development, :test]
 
 gem 'mechanize'
+gem 'sorcery' 
 # Маркдаун
 gem "redcarpet"
 gem 'markitup-rails'
 gem 'pygments.rb'
-
+gem 'rails-bootstrap-markdown'
 group :doc do
   gem 'sdoc', '0.3.20', require: false
 end

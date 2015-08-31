@@ -13,4 +13,4 @@
 login=`whoami`.strip
 email="#{login}@mail.msiu.ru"
 password=login*2
-User.create!(name: login, email: email, password: password,password_confirmation: password, role: 1)
+User.create!(login: login, email: email, password: password,password_confirmation: password, role: 1)

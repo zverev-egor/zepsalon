@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:edit, :update, :destroy]
+  before_action :set_user, only: [:show,:edit, :update, :destroy]
   before_action :check_auth, except: [:new, :create]
   before_action :check_edit, except: [:new, :create]
 
@@ -7,6 +7,8 @@ class UsersController < ApplicationController
     @users = User.ordering.page(params[:page])
   end
 
+  def show
+  end
 
   def new
     @user = User.new
@@ -53,7 +55,7 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    attrs=[:name, :email, :password, :password_confirmation]
+    attrs=[:login, :last_name, :first_name, :second_name, :email, :password, :password_confirmation, :avatar]
     attrs << :role if User.edit?(@current_user)
     params.require(:user).permit(attrs)
   end
